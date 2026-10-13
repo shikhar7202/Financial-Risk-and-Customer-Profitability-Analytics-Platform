@@ -1,0 +1,5 @@
+Customers = DISTINCTCOUNT(Customers[customer_id])
+Revenue = SUM(Customers[annual_revenue])
+Profit = SUM(Customers[profit])
+Default Rate = DIVIDE(SUM(Customers[default_flag]),[Customers])
+Avg Utilization = AVERAGE(Customers[utilization_pct])
